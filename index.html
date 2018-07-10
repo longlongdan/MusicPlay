@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+	<title>音乐播放器</title>
+	<link rel="stylesheet" type="text/css" href="./css/index.css">
+	<script src="http://libs.baidu.com/jquery/1.11.1/jquery.min.js"></script>
+	<script type="text/javascript" src="https://unpkg.com/better-scroll/dist/bscroll.min.js"></script>
+	<script type="text/javascript" src="./js/jquery.rotate.min.js"></script>
+	<!-- 为了兼容手机端，转换为ES5 -->
+	<script type="text/javascript" src="./js/indexES5.js"></script>
+</head>
+<body>
+	<!-- <header></header> -->
+	<audio src="./music/莫文蔚 - 阴天.mp3" controls="controls"></audio>
+	<nav>
+		<p>我的音乐</p>
+		<span><img src="./img/search.png" alt=""></span>
+		<span><img src="./img/earch.png" alt=""></span>
+	</nav>
+	<section>
+		<img src="./img/Bg.png" alt="">
+		<div class="wrapper">
+		  <ul class="content musicList">
+		  	<li class="musicItem">
+				<img src="./img/bi.jpg" alt="" class="musicImg">
+				<p class="musicName">年轮</p>
+				<p class="musicSinger">张碧晨</p>
+			</li>
+		  </ul>
+		  <!-- <div class="musicWord">123</div> -->
+		</div>
+	</section>
+	<footer>
+		<input type="range" class="progress" value="0">
+		<div>
+			<img src="./img/mo.jpg" alt="" class="musicSlt">
+		</div>
+		<span><img src="./img/pre.png" alt="" class="pre"></span>
+		<span><img src="./img/play.png" alt="" class="play"></span>
+		<span><img src="./img/next.png" alt="" class="next"></span>
+		<span><img src="./img/loud.png" alt="" class="volu"></span>
+		<div class="volumeContent">
+			音量调节<br>
+			<input type="range" class="volume" value="20">
+		</div>
+	</footer>
+</body>
+</html>
